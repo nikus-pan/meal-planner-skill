@@ -1,0 +1,25 @@
+meta:
+  name: 菜脯蛋
+  meal_slots: [breakfast, lunch, dinner]
+  cooking_time_min: 13
+  strict_sensitive: [allergens:A6, hypertension:H1]
+
+ingredients:
+  - { item: 雞蛋, qty: 2 顆, substitutable: true, alt: [豆腐（煎）],
+      strict_sensitive: [allergens:A6] }
+  - { item: 菜脯（鹹菜脯）, qty: 30 g, substitutable: true, alt: [略],
+      note: "含鹽醃漬，高血壓 H1 建議減量" }
+  - { item: 蔥花, qty: 適量, substitutable: false }
+  - { item: 香油, qty: 少許, substitutable: true, alt: [植物油] }
+  - { item: 砂糖, qty: 少許, substitutable: true, alt: [略],
+      note: "提味；糖尿病 T2 建議略" }
+
+steps:
+  - { stage: 備料, text: "菜脯泡水 10 分去過鹹、瀝乾切碎", time_min: 10 }
+  - { stage: 備料, text: "蛋打散加蔥花、少許太白粉備用", time_min: 1 }
+  - { stage: 烹調, text: "乾鍋小火炒香菜脯 30 秒，蛋液倒入攤開、翻面煎熟", time_min: 2 }
+
+health_flags:
+  - "雞蛋 strict_sensitive：蛋 (A6) → 蛋過敏剔除"
+  - "菜脯：含鹽醃漬（高鈉），高血壓 (H1) → 減量或先泡水去鹹"
+  - "砂糖：糖尿病 (T2) 建議略用"

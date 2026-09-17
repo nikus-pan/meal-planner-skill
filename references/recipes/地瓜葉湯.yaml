@@ -1,0 +1,27 @@
+meta:
+  name: 地瓜葉湯
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 25   # = sum(steps[].time_min)
+  strict_sensitive: []
+
+ingredients:
+  - { item: 地瓜葉, qty: 200 g, substitutable: false,
+      note: "高鉀食材，高血壓 H3 advisory 對應" }
+  - { item: 小魚乾, qty: 30 g, substitutable: true, alt: [略],
+      strict_sensitive: [allergens:A1] }
+  - { item: 蒜仁, qty: 4 瓣, substitutable: true, alt: [略] }
+  - { item: 油, qty: 1 匙, substitutable: true, alt: [酪梨油] }
+  - { item: 鹽, qty: 少許, substitutable: false,
+      note: "高血壓 H1 建議減量" }
+  - { item: 胡椒粉, qty: 少許, substitutable: false }
+  - { item: 水, qty: 4 杯, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "地瓜葉洗淨、挑除老梗、切段", time_min: 5 }
+  - { stage: 烹調, text: "蒜仁爆香、小魚乾煎香", time_min: 10 }
+  - { stage: 烹調, text: "加水滾後下地瓜葉燙 8 分至軟", time_min: 8 }
+  - { stage: 完成, text: "鹽、胡椒粉調味起鍋", time_min: 2 }
+
+health_flags:
+  - "小魚乾 strict_sensitive：海鮮 (A1) → 海鮮過敏可全量剔除（素版）"
+  - "地瓜葉：高鉀食材，高血壓 (H3) advisory 對應（腎病變者除外）"

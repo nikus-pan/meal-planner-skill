@@ -1,0 +1,23 @@
+region: 台中
+markets:
+- name: 台中第三公有零售市場（第三市場）
+  address: 台中市南區長春里台中路90號
+  hours: 07:00-13:00（每週一休市；以市場管理處公告為準）
+  note: 百年老市場（1922年開設，原敷島町市場），紧邻台中車站約400公尺；198個攤鋪位，蔬菜、肉品、魚鮮與伴手禮（廣記肉鬆、三廣商行和菓子）齊全；經濟部評核3星優良市集，兼具文創與傳統。
+- name: 台中市公有建國零售市場（建國市場）
+  address: 台中市東區泉源里建成路500號
+  hours: 05:00-12:00（每週一休市；以市場管理處公告為準）
+  note: 大台中規模最大的傳統市場，約2.2公頃、分五大業種區；每日清晨5點生鮮蔬菜、肉品、魚貨與海產開門，價格較便宜，為在地居民日常採買與餐廳供貨處；114年榮獲5星優良市集，另有電商平台與多元付款。
+- name: 台中第一公有零售市場（東協廣場）
+  address: 台中市中區綠川里綠川西街135號
+  hours: 11:00-21:30（無固定休市日；以市場管理處公告為準）
+  note: 1908年開設的第一市場，現轉為綜合休閒廣場「東協廣場」；東南亞香料、異國食材與伴手禮為特色，鄰近台中車站與綠川水岸；不屬早市型，適合日間採買與逛攤。
+custom_markets: []
+source_urls:
+- https://www.economic.taichung.gov.tw/16103/16153/16313/16343/16355/47932
+- https://www.economic.taichung.gov.tw/16103/16153/16313/16343/16355/47942
+- https://www.economic.taichung.gov.tw/16103/16153/16313/16343/16355/47936
+- https://www.olah.com.tw/Taichung-Zhongshan/tw/news-detail/taichung-market/
+- https://travel.taichung.gov.tw/zh-tw/attractions/intro/70
+- https://niniandblue.com/blog/post/220444603
+updated: 2026-09-17

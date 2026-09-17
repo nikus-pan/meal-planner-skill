@@ -1,0 +1,24 @@
+meta:
+  name: 清蒸魚
+  meal_slots: [dinner]
+  cooking_time_min: 22
+  strict_sensitive: [allergens:A1]
+
+ingredients:
+  - { item: 魚（白身魚，如石斑、龍膽）, qty: 1 尾（約 400 g）, substitutable: true,
+      alt: [鯛魚, 鱸魚], strict_sensitive: [allergens:A1] }
+  - { item: 薑絲, qty: 適量, substitutable: false }
+  - { item: 蔥絲, qty: 適量, substitutable: false }
+  - { item: 蒸魚豉油, qty: 1 匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+
+steps:
+  - { stage: 備料, text: "魚刨洗乾淨、身鋪薑絲", time_min: 2 }
+  - { stage: 烹調, text: "水滾後中火蒸8分（400g）", time_min: 8 }
+  - { stage: 烹調, text: "撈掉蒸汁、灑蔥絲", time_min: 5 }
+  - { stage: 烹調, text: "滾油激香", time_min: 2 }
+  - { stage: 烹調, text: "淋蒸魚豉油", time_min: 5 }
+
+health_flags:
+  - "魚 strict_sensitive：過敏原 (A1) → 海鮮過敏者全量剔除，換瘦肉/豆腐"
+  - "蒸魚豉油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"

@@ -1,0 +1,27 @@
+meta:
+  name: 小魚炒豆腐
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 16
+  strict_sensitive: [allergens:A1, allergens:A4]
+
+ingredients:
+  - { item: 小魚乾, qty: 30 g, substitutable: true, alt: [煎白身魚],
+      strict_sensitive: [allergens:A1] }
+  - { item: 豆腐, qty: 1 盒, substitutable: true, alt: [素肉],
+      strict_sensitive: [allergens:A4] }
+  - { item: 蒜末, qty: 2 瓣, substitutable: false }
+  - { item: 醬油, qty: 1 匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+
+steps:
+  - { stage: 烹調, text: "豆腐切塊汆燙備用", time_min: 5 }
+  - { stage: 烹調, text: "小魚乾少許油煎香撈起", time_min: 2 }
+  - { stage: 烹調, text: "蒜末爆香", time_min: 2 }
+  - { stage: 烹調, text: "豆腐下鍋輕翻", time_min: 2 }
+  - { stage: 烹調, text: "小魚乾同炒", time_min: 2 }
+  - { stage: 完成, text: "醬油調味收汁", time_min: 3 }
+
+health_flags:
+  - "小魚乾 strict_sensitive：海鮮 (A1) → 海鮮過敏剔除，換瘦肉/雞肉"
+  - "豆腐 strict_sensitive：大豆 (A4) → 大豆過敏換素肉"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"

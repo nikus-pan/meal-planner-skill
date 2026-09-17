@@ -1,0 +1,25 @@
+meta:
+  name: 金鉤菇湯
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 18
+  strict_sensitive: [diabetes:T6]
+
+ingredients:
+  - { item: 杏鮑菇, qty: 150 g, substitutable: true,
+      alt: [洋菇, 香菇], note: "原方為金鉤菇；農業部 API 無此品名，實測改以杏鮑菇/洋菇/香菇查價（票 02 決策）" }
+  - { item: 瘦肉（豬里肌）, qty: 80 g, substitutable: true, alt: [雞肉],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 枸杞, qty: 少許, substitutable: true, alt: [略] }
+  - { item: 水, qty: 2 杯, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "菇切塊、肉切片醃料酒/生粉", time_min: 3 }
+  - { stage: 烹調, text: "水滾下肉片汆燙", time_min: 5 }
+  - { stage: 烹調, text: "菇同煮5分", time_min: 5 }
+  - { stage: 烹調, text: "枸杞下鍋", time_min: 2 }
+  - { stage: 完成, text: "少許鹽調味起鍋", time_min: 3 }
+
+health_flags:
+  - "菇類：農業部 API 無「金鉤菇」品名（票 02 實測 0 筆），改以杏鮑菇/洋菇/香菇查價"
+  - "瘦肉 advisory：糖尿病 (T3) → 可換雞肉"
+  - "菇類 advisory：糖尿病 (T6) → 富含纖維，可作為餐前蔬菜"

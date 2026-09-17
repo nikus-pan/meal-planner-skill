@@ -1,0 +1,31 @@
+meta:
+  name: 三絲麵線
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 21
+  strict_sensitive: [allergens:A5, diabetes:T5, hypertension:H1]
+
+ingredients:
+  - { item: 麵線, qty: 1 人份, substitutable: true, alt: [全穀麵條],
+      strict_sensitive: [allergens:A5, diabetes:T5] }
+  - { item: 肉絲（豬里肌）, qty: 50 g, substitutable: true, alt: [雞肉絲],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 木耳絲, qty: 30 g, substitutable: false }
+  - { item: 筍絲, qty: 50 g, substitutable: true, alt: [高麗菜絲] }
+  - { item: 蝦米, qty: 1 匙, substitutable: true, alt: [略],
+      strict_sensitive: [allergens:A1] }
+  - { item: 醬油膏, qty: 1 匙, substitutable: true, alt: [低鈉醬油膏],
+      strict_sensitive: [hypertension:H1] }
+
+steps:
+  - { stage: 備料, text: "三絲（木耳/筍/高麗菜）切備", time_min: 3 }
+  - { stage: 備料, text: "蝦米泡水軟、備用", time_min: 3 }
+  - { stage: 備料, text: "麵線1人份冷水浸軟", time_min: 3 }
+  - { stage: 烹調, text: "湯頭：蝦米爆香+肉絲炒至變色+加水煮滾5分", time_min: 5 }
+  - { stage: 烹調, text: "下麵線煮2分、下三絲同煮1分", time_min: 2 }
+  - { stage: 烹調, text: "醬油膏/少許糖調味", time_min: 3 }
+  - { stage: 烹調, text: "淋少許麻油（選用）", time_min: 2 }
+
+health_flags:
+  - "麵線 strict_sensitive：麩質 (A5) + 精緻穀物 (T5) → 麩質過敏剔除、糖尿病換全穀"
+  - "蝦米 strict_sensitive：海鮮 (A1) → 海鮮過敏剔除"
+  - "醬油膏 strict_sensitive：高血壓 (H1) → 低鈉版或減量"

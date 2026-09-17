@@ -1,0 +1,42 @@
+# 菜谱库索引（讓 skill 端匹配菜名時不用逐一打開每個檔）
+# 結構：name / 時段 / 敏感規則 ID（引 dietary-rules 的 T*/H*/A*；ID 保留 rule 來源前綴，例 diabetes:T3）
+# 維護：新菜 = 加一檔 YAML + 更新本 index；未命中 websearch 後回寫（v1 票 07 (d)）
+recipes:
+  # 第一批 13 道
+  - { name: 宮保雞丁, file: 宮保雞丁.yaml, slots: [lunch, dinner], sensitive: [allergens:A3, allergens:A7, hypertension:H1] }
+  - { name: 麻婆豆腐, file: 麻婆豆腐.yaml, slots: [lunch, dinner], sensitive: [allergens:A4, hypertension:H1, hypertension:H2] }
+  - { name: 清蒸魚, file: 清蒸魚.yaml, slots: [dinner], sensitive: [allergens:A1] }
+  - { name: 皮蛋瘦肉粥, file: 皮蛋瘦肉粥.yaml, slots: [breakfast, dinner], sensitive: [allergens:A6, diabetes:T3, hypertension:H1] }
+  - { name: 高麗菜炒蛋, file: 高麗菜炒蛋.yaml, slots: [lunch, dinner], sensitive: [allergens:A6] }
+  - { name: 小魚炒豆腐, file: 小魚炒豆腐.yaml, slots: [lunch, dinner], sensitive: [allergens:A1, allergens:A4] }
+  - { name: 金鉤菇湯, file: 金鉤菇湯.yaml, slots: [lunch, dinner], sensitive: [diabetes:T6] }
+  - { name: 冬瓜排骨湯, file: 冬瓜排骨湯.yaml, slots: [dinner], sensitive: [diabetes:T3] }
+  - { name: 三絲麵線, file: 三絲麵線.yaml, slots: [lunch, dinner], sensitive: [allergens:A5, diabetes:T5, hypertension:H1] }
+  - { name: 紅燒肉, file: 紅燒肉.yaml, slots: [lunch, dinner], sensitive: [diabetes:T3, diabetes:T7, hypertension:H1] }
+  - { name: 蒜苗牛肉, file: 蒜苗牛肉.yaml, slots: [lunch, dinner], sensitive: [diabetes:T3] }
+  - { name: 燙青菜, file: 燙青菜.yaml, slots: [lunch, dinner], sensitive: [] }
+  - { name: 滷蛋, file: 滷蛋.yaml, slots: [breakfast, lunch, dinner], sensitive: [allergens:A6, hypertension:H1] }
+  # 第二批 6 道（台味家常菜擴充，v4 票 03）
+  - { name: 滷肉, file: 滷肉.yaml, slots: [lunch, dinner], sensitive: [diabetes:T3, hypertension:H1] }
+  - { name: 三杯雞, file: 三杯雞.yaml, slots: [lunch, dinner], sensitive: [diabetes:T3, diabetes:T7, hypertension:H1] }
+  - { name: 瓜仔肉, file: 瓜仔肉.yaml, slots: [lunch, dinner], sensitive: [hypertension:H1] }
+  - { name: 菜脯蛋, file: 菜脯蛋.yaml, slots: [breakfast, lunch, dinner], sensitive: [allergens:A6, hypertension:H1] }
+  - { name: 蝦卷, file: 蝦卷.yaml, slots: [lunch, dinner, snack], sensitive: [allergens:A1, diabetes:T7] }
+  - { name: 涼拌小黃瓜, file: 涼拌小黃瓜.yaml, slots: [lunch, dinner, snack], sensitive: [hypertension:H1] }
+  # 第三批 2 道（無糖低鈉湯品，v5 票 01）
+  - { name: 昆布柴魚高湯, file: 昆布柴魚高湯.yaml, slots: [lunch, dinner], sensitive: [hypertension:H1] }
+  - { name: 高麗菜香菇清湯, file: 高麗菜香菇清湯.yaml, slots: [lunch, dinner], sensitive: [hypertension:H1] }
+  # 第四批 6 道（台味家常菜擴充 v6，票 02）
+  - { name: 四神湯, file: 四神湯.yaml, slots: [lunch, dinner], sensitive: [diabetes:T3] }
+  - { name: 紅燒獅子頭, file: 紅燒獅子頭.yaml, slots: [lunch, dinner], sensitive: [diabetes:T3, diabetes:T7, hypertension:H1, allergens:A6] }
+  - { name: 涼拌豆干, file: 涼拌豆干.yaml, slots: [lunch, dinner, snack], sensitive: [allergens:A4, hypertension:H1] }
+  - { name: 地瓜葉湯, file: 地瓜葉湯.yaml, slots: [lunch, dinner], sensitive: [allergens:A1, hypertension:H3] }
+  - { name: 蒜頭綠豆湯, file: 蒜頭綠豆湯.yaml, slots: [lunch, dinner, snack], sensitive: [diabetes:T2, hypertension:H1] }
+  - { name: 魯排骨, file: 魯排骨.yaml, slots: [lunch, dinner], sensitive: [diabetes:T3, hypertension:H1] }
+  # 第五批 6 道（台味家常菜擴充 v7，票 03）
+  - { name: 苦瓜排骨湯, file: 苦瓜排骨湯.yaml, slots: [dinner], sensitive: [diabetes:T3] }
+  - { name: 紅燜牛腩, file: 紅燜牛腩.yaml, slots: [lunch, dinner], sensitive: [diabetes:T3, diabetes:T7, hypertension:H1] }
+  - { name: 蒜蓉生菜, file: 蒜蓉生菜.yaml, slots: [lunch, dinner], sensitive: [hypertension:H1] }
+  - { name: 涼拌海帶芽, file: 涼拌海帶芽.yaml, slots: [lunch, dinner, snack], sensitive: [allergens:A1, hypertension:H1] }
+  - { name: 台式炒飯, file: 台式炒飯.yaml, slots: [lunch, dinner], sensitive: [allergens:A1, allergens:A6, diabetes:T3, hypertension:H1] }
+  - { name: 三溫暖豆腐, file: 三溫暖豆腐.yaml, slots: [lunch, dinner], sensitive: [allergens:A1, allergens:A4, allergens:A6, hypertension:H1] }

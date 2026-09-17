@@ -1,0 +1,92 @@
+# 糖尿病規則包（第一批）
+# 來源：研究 02（ADA Standards of Care 2026 Rec 5.14–5.31 + 台灣糖尿病學會衛教）
+# level: strict = 違反觸發替換流程；advisory = 只打分/建議
+# 承 03 定案：單菜 strict violation > 2 項 → 降級剔除
+meta:
+  condition: 糖尿病
+  version: 1
+  sources:
+    - https://diabetesjournals.org/care/article/49/Supplement_1/S89/163932
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC3816916/
+
+rules:
+  - id: T1
+    cond: 鈉攝取
+    level: strict
+    action: limit
+    limit: "<= 2300 mg/日；最實用方法 = 限制加工食品"
+    source: ADA Rec 5.20 (B)
+  - id: T2
+    cond: 含糖飲料（含果汁）
+    level: strict
+    action: ban
+    limit: null
+    source: ADA Rec 5.25 (B)
+  - id: T3
+    cond: 飲食模式
+    level: strict
+    action: avoid
+    limit: "最小化紅肉、含糖飲料、甜點、精緻穀物、加工/超加工食品"
+    source: ADA Rec 5.14 (B)
+  - id: T4
+    cond: 纖維攝取
+    level: advisory
+    action: prefer
+    limit: ">= 14 g / 1000 kcal"
+    source: ADA Rec 5.24 (B)
+  - id: T5
+    cond: 醣類攝取
+    level: advisory
+    action: limit
+    limit: "部分糖尿病成人可降低醣類（以限制加工食品為有效方式）"
+    source: ADA Rec 5.15 (B)
+  - id: T6
+    cond: 地中海型飲食
+    level: advisory
+    action: prefer
+    limit: "富含油魚、堅果、種子，降低心血管風險並改善葡萄糖代謝"
+    source: ADA Rec 5.30 (A/B)
+  - id: T7
+    cond: 飽和脂肪
+    level: advisory
+    action: limit
+    limit: null
+    source: ADA Rec 5.31 (B)
+  - id: T8
+    cond: 植物性蛋白質
+    level: advisory
+    action: prefer
+    limit: "堅果、種子、豆類"
+    source: ADA Rec 5.29 (B)
+  - id: T9
+    cond: 酒精
+    level: strict
+    action: limit
+    limit: "飲酒者 男 <=2 杯/日、女 <=1 杯/日；不飲酒者不建議開始；告誡延遲性低血糖"
+    source: ADA Rec 5.18–5.19 (B)
+  - id: T10
+    cond: β-胡蘿蔔素補充劑
+    level: strict
+    action: ban
+    limit: "不建議（有證實危害）；不建議以草本/補充品（肉桂、蘆薈）獲益血糖"
+    source: ADA Rec 5.16–5.17
+  - id: T11
+    cond: 非營養甜味劑
+    level: advisory
+    action: prefer
+    limit: "可取代含糖品項，須適量且短期，勿長期代償性多食"
+    source: ADA Rec 5.22 (B)
+  - id: T12
+    cond: 胰島素固定劑量者之醣類
+    level: advisory
+    action: prefer
+    limit: "保持每餐醣類份量與時間一致性"
+    source: ADA Rec 5.28 (B)
+
+# 台灣衛教可編碼項（advisory 為主）
+tw_guidelines:
+  - { item: 六大類份量代換, detail: "1 份全穀 = 15 g 醣", level: advisory }
+  - { item: 低碳水比例, detail: "26–45%；腎病變者改 55–60%", level: advisory }
+  - { item: 餐序, detail: "先蛋白/纖維、後醣", level: advisory }
+  - { item: 餐盤, detail: "半蔬果 ¼ 全穀 ¼ 蛋白", level: advisory }
+  - { item: 果汁, detail: "不建議糖尿病人飲用", level: strict }

@@ -1,0 +1,28 @@
+meta:
+  name: 麻婆豆腐
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 15
+  strict_sensitive: [allergens:A4, hypertension:H1, hypertension:H2]
+
+ingredients:
+  - { item: 豆腐, qty: 1 盒, substitutable: true,
+      alt: [素肉], strict_sensitive: [allergens:A4] }
+  - { item: 肉末, qty: 50 g, substitutable: true, alt: [雞肉末] }
+  - { item: 豆瓣醬, qty: 1 匙, substitutable: true, alt: [低鈉豆瓣醬],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 蒜末, qty: 2 瓣, substitutable: false }
+  - { item: 花椒, qty: 少許, substitutable: true, alt: [ omitted] }
+
+steps:
+  - { stage: 備料, text: "豆腐切塊汆燙30秒撈起", time_min: 1 }
+  - { stage: 備料, text: "蔥蒜薑切末", time_min: 3 }
+  - { stage: 烹調, text: "油爆香蒜薑末、下肉末炒至變色", time_min: 2 }
+  - { stage: 烹調, text: "下豆瓣醬炒出紅油", time_min: 2 }
+  - { stage: 烹調, text: "加水/高湯、下豆腐小火煮3分", time_min: 3 }
+  - { stage: 烹調, text: "太白粉水勾薄芡（可分2次）", time_min: 2 }
+  - { stage: 完成, text: "撒花椒粉、蔥花", time_min: 2 }
+
+health_flags:
+  - "豆腐 strict_sensitive：過敏原 (A4) → 替換為素肉（非大豆製品）"
+  - "豆瓣醬 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "高鈉醬料：整體鈉量注意（DASH H2）"

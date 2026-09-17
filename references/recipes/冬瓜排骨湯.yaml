@@ -1,0 +1,22 @@
+meta:
+  name: 冬瓜排骨湯
+  meal_slots: [dinner]
+  cooking_time_min: 43
+  strict_sensitive: [diabetes:T3]
+
+ingredients:
+  - { item: 冬瓜, qty: 200 g, substitutable: false }
+  - { item: 排骨, qty: 200 g, substitutable: true, alt: [瘦肉],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 薑片, qty: 3 片, substitutable: false }
+  - { item: 水, qty: 4 杯, substitutable: false }
+
+steps:
+  - { stage: 烹調, text: "排骨冷水下鍋汆燙去血水，撈起洗淨", time_min: 5 }
+  - { stage: 烹調, text: "排骨+薑+4杯水滾轉小火燜25分", time_min: 25 }
+  - { stage: 烹調, text: "冬瓜切片同煮10分", time_min: 10 }
+  - { stage: 完成, text: "少許鹽調味起鍋", time_min: 3 }
+
+health_flags:
+  - "排骨 advisory：糖尿病 (T3) 最小化紅肉 → 可換瘦肉/雞肉"
+  - "冬瓜當季夏末（AFA 產季曆未列 9 月冬瓜，需核對）"

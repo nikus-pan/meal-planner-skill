@@ -1,0 +1,31 @@
+meta:
+  name: 涼拌小黃瓜
+  meal_slots: [lunch, dinner, snack]
+  cooking_time_min: 22
+  strict_sensitive: [hypertension:H1]
+
+ingredients:
+  - { item: 小黃瓜, qty: 2 條, substitutable: false,
+      note: "高鉀食材，高血壓 H3 advisory 對應" }
+  - { item: 蒜頭, qty: 2 顆, substitutable: true, alt: [略] }
+  - { item: 辣椒, qty: 1 條, substitutable: true, alt: [略] }
+  - { item: 醬油, qty: 1 大匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 糖, qty: 1 大匙, substitutable: true, alt: [略],
+      note: "涼拌酸甜；糖尿病 T2 建議略或改少" }
+  - { item: 醋, qty: 1 大匙, substitutable: false }
+  - { item: 香油, qty: 少許, substitutable: true, alt: [植物油] }
+  - { item: 鹽, qty: 1 小匙, substitutable: false,
+      note: "先醃出水用；高血壓 H1 建議減量" }
+
+steps:
+  - { stage: 備料, text: "小黃瓜拍裂切段、蒜拍裂切碎、辣椒切段", time_min: 5 }
+  - { stage: 備料, text: "黃瓜段加 1 小匙鹽抓醃 10 分出水、倒掉水分", time_min: 10 }
+  - { stage: 烹調, text: "醃汁：醬油＋糖＋醋＋香油拌勻", time_min: 2 }
+  - { stage: 完成, text: "黃瓜瀝乾、淋醃汁、撒蒜蓉辣椒，冷藏 5 分入味", time_min: 5 }
+
+health_flags:
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "鹽醃出水的步驟：高血壓 (H1) 建議減量"
+  - "糖：糖尿病 (T2) 建議略用或減量"
+  - "小黃瓜：高鉀食材，高血壓 (H3) advisory 對應（腎病變者除外）"

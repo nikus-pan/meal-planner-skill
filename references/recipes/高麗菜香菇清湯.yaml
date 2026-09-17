@@ -1,0 +1,27 @@
+meta:
+  name: 高麗菜香菇清湯
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 18
+  strict_sensitive: [hypertension:H1]
+
+ingredients:
+  - { item: 高麗菜, qty: 150 g, substitutable: false,
+      note: "農業部品名 = 甘藍（ingredient-map）" }
+  - { item: 香菇, qty: 4 朵, substitutable: true, alt: [金鉤菇] }
+  - { item: 雞高湯塊（低鈉）, qty: 1/2 塊, substitutable: true,
+      alt: [略、改純水燉], strict_sensitive: [hypertension:H1],
+      note: "H1 嚴控時用低鈉塊或略（純水燉蔬菜更清爽）" }
+  - { item: 薑絲, qty: 少許, substitutable: false }
+  - { item: 鹽, qty: 少許, substitutable: true, alt: [略],
+      strict_sensitive: [hypertension:H1] }
+
+steps:
+  - { stage: 備料, text: "高麗菜切小塊、香菇切片", time_min: 4 }
+  - { stage: 烹調, text: "水 3 杯滾，下香菇、薑絲小火燉 10 分", time_min: 10 }
+  - { stage: 烹調, text: "下高麗菜煮 3 分至半軟", time_min: 3 }
+  - { stage: 完成, text: "低鈉高湯塊/少許鹽調味起鍋（H1 可略）", time_min: 1 }
+
+health_flags:
+  - "無糖、低鈉（調味全選用）→ 糖尿病 T2/T5、高血壓 H1 皆適合當湯品替代"
+  - "高麗菜 = 農業部 API「甘藍」品名（查價走 ingredient-map）"
+  - "香菇/菇類 9 月當季（AFA）；蔬菜 = H3 高鉀來源（advisory）"

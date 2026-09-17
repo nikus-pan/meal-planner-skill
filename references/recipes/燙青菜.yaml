@@ -1,0 +1,23 @@
+meta:
+  name: 燙青菜
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 9
+  strict_sensitive: []
+
+ingredients:
+  - { item: 高麗菜, qty: 200 g, substitutable: true,
+      alt: [蕹菜, 青江, 豆芽菜, 小白菜] }
+  - { item: 蒜末, qty: 1 瓣, substitutable: false }
+  - { item: 醬油, qty: 1 匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+
+steps:
+  - { stage: 備料, text: "青菜洗淨、水滾", time_min: 2 }
+  - { stage: 烹調, text: "下青菜燙1–2分起鍋", time_min: 2 }
+  - { stage: 烹調, text: "燙起後冷水沖淋30秒（去鈉洗滌：洗去表面附著鹽分，水溶性維生素損耗最低）", time_min: 2 }
+  - { stage: 烹調, text: "少許油爆蒜末；淋醬油調味（H1 低鈉版或減半；H3 者青菜多食、鹽少補鉀）", time_min: 3 }
+
+health_flags:
+  - "青菜 = 高纖、高鉀（DASH H3 友善）；H3 建議每日蔬果＋豆類 400 g 起，本菜 200 g 可再搭配豆湯／第二份蔬菜"
+  - "燙青菜去鈉洗滌法（H3＋H1 併用）：燙起後冷水沖淋 30 秒 → 洗去表面附著鹽分；水溶性維生素 B/C 損耗低於長時間汆燙"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量；H3 高鉀者「鹽少補鉀」（WHO 鈉 <2 g/日、鉀 2000–3500 mg/日）"

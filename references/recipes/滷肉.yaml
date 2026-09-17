@@ -1,0 +1,30 @@
+meta:
+  name: 滷肉
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 52
+  strict_sensitive: [diabetes:T3, hypertension:H1]
+
+ingredients:
+  - { item: 豬五花（或絞肉）, qty: 300 g, substitutable: true, alt: [豬絞肉],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 紅蔥頭, qty: 30 g, substitutable: true, alt: [蔥段] }
+  - { item: 蒜頭, qty: 5 顆, substitutable: false }
+  - { item: 醬油, qty: 3 匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 米酒, qty: 1 匙, substitutable: true, alt: [水] }
+  - { item: 黑糖, qty: 1 匙, substitutable: true, alt: [冰糖, 略],
+      note: "滷肉微甜收汁；糖尿病 T2 建議略" }
+  - { item: 水, qty: 半杯, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "五花肉切小條、紅蔥頭切末、蒜頭切末", time_min: 5 }
+  - { stage: 烹調, text: "中火慢煎五花肉逼出豬油至微焦，約 10 分", time_min: 10 }
+  - { stage: 烹調, text: "下紅蔥頭、蒜末炒香", time_min: 3 }
+  - { stage: 烹調, text: "加醬油、米酒、黑糖翻勻", time_min: 2 }
+  - { stage: 烹調, text: "加半杯水蓋過肉，蓋蓋小火燜煮 30 分", time_min: 30 }
+  - { stage: 完成, text: "大火收汁至濃稠、油亮即起鍋", time_min: 2 }
+
+health_flags:
+  - "五花肉 strict_sensitive：紅肉/飽和脂肪 (T3) → 糖尿病建議剔除或換絞肉減量"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "黑糖：糖尿病 (T2) 建議略用，改以醬油/米酒提味"

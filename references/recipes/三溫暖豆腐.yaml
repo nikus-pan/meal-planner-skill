@@ -1,0 +1,33 @@
+meta:
+  name: 三溫暖豆腐
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 20
+  strict_sensitive: [allergens:A1, allergens:A4, allergens:A6, hypertension:H1]
+
+ingredients:
+  - { item: 板豆腐, qty: 1 盒（約 300 g）, substitutable: true,
+      alt: [老豆腐], strict_sensitive: [allergens:A4] }
+  - { item: 小黃瓜, qty: 1 條, substitutable: true, alt: [略] }
+  - { item: 蛋黃, qty: 1 顆, substitutable: true, alt: [略],
+      strict_sensitive: [allergens:A6] }
+  - { item: 柴魚片, qty: 2 g, substitutable: true, alt: [略],
+      strict_sensitive: [allergens:A1] }
+  - { item: 日式醬油, qty: 1 大匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 薑末, qty: 少許, substitutable: true, alt: [略] }
+  - { item: 芝麻, qty: 少許, substitutable: true, alt: [略] }
+  - { item: 水, qty: 3 杯, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "豆腐切厚片、小黃瓜切薄片、蛋黃備用", time_min: 5 }
+  - { stage: 備料, text: "醬油＋少許水調成澆汁備用", time_min: 1 }
+  - { stage: 烹調, text: "水滾下豆腐小火川燙 5 分定型、過冷水", time_min: 5 }
+  - { stage: 完成, text: "豆腐擺盤、淋醬汁、放蛋黃、灑柴魚薑末芝麻", time_min: 4 }
+  - { stage: 完成, text: "熱吃冷吃兩用：熱即食，冷藏 5 分後涼拌皆可", time_min: 5 }
+
+health_flags:
+  - "板豆腐 strict_sensitive：大豆 (A4) → 大豆過敏全量剔除"
+  - "柴魚 strict_sensitive：海鮮 (A1) → 海鮮過敏剔除"
+  - "蛋黃 strict_sensitive：蛋 (A6) → 蛋過敏剔除"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "低油低糖蛋白菜：糖尿病 (T8) 植物蛋白 advisory 友善"

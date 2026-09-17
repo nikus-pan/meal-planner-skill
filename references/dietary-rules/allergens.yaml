@@ -1,0 +1,36 @@
+# 常見過敏原規則包（第一批）
+# 承 03 定案：常見過敏原 = 海鮮、乳製品、堅果、大豆、麩質、蛋、落花生
+# 用法：使用者的「禁忌」欄位匹配到本檔條目 → level: strict, action: ban（全餐剔除）
+meta:
+  condition: 過敏原/食物禁忌
+  version: 1
+
+rules:
+  - id: A1
+    cond: 海鮮（甲殼類、貝類、魚）
+    level: strict
+    action: ban
+  - id: A2
+    cond: 乳製品（牛奶、乳酪、鮮奶油、奶油）
+    level: strict
+    action: ban
+  - id: A3
+    cond: 堅果（杏仁、胡桃、腰果、開心果等樹堅果）
+    level: strict
+    action: ban
+  - id: A4
+    cond: 大豆（豆腐、豆漿、毛豆、豆類製品）
+    level: strict
+    action: ban
+  - id: A5
+    cond: 麩質（小麥、大麥、黑麥；麵包、麵條、麵粉製品）
+    level: strict
+    action: ban
+  - id: A6
+    cond: 蛋（雞蛋、鴨蛋、蛋製品）
+    level: strict
+    action: ban
+  - id: A7
+    cond: 落花生（花生、花生酱、花生油）
+    level: strict
+    action: ban

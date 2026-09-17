@@ -1,0 +1,28 @@
+meta:
+  name: 苦瓜排骨湯
+  meal_slots: [dinner]
+  cooking_time_min: 45
+  strict_sensitive: [diabetes:T3]
+
+ingredients:
+  - { item: 苦瓜, qty: 1/2 顆（約 300 g）, substitutable: true,
+      alt: [白玉苦瓜、絲瓜] }
+  - { item: 豬排骨, qty: 300 g, substitutable: true, alt: [瘦肉],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 薑片, qty: 3 片, substitutable: false }
+  - { item: 米酒, qty: 1 大匙, substitutable: true, alt: [水] }
+  - { item: 蔥花, qty: 少許, substitutable: false }
+  - { item: 鹽, qty: 少許, substitutable: true, alt: [略],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 水, qty: 5 杯, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "排骨冷水下鍋汆燙去血水，撈起洗淨；苦瓜去籽切塊", time_min: 8 }
+  - { stage: 烹調, text: "排骨＋薑＋米酒＋5杯水滾轉小火燉 25 分", time_min: 25 }
+  - { stage: 烹調, text: "下苦瓜續燉 10 分至軟", time_min: 10 }
+  - { stage: 完成, text: "少許鹽調味，灑蔥花起鍋", time_min: 2 }
+
+health_flags:
+  - "排骨 strict_sensitive：糖尿病 (T3) 最小化紅肉 → 可換瘦肉/雞肉"
+  - "鹽：高血壓 (H1) 建議減量或免用"
+  - "苦瓜清熱解暑，夏秋季當季（AFA 產季曆需核對）"

@@ -1,0 +1,44 @@
+region: 屏東
+markets:
+- name: 屏東西市場（屏東市西區公有零售市場）
+  address: 屏東市和平路320號
+  hours: 08:00-20:00，週一休市
+  note: 2022年改建的綠建築市場，有冷氣；約94家攤商，在地蔬果、鮮宰牛肉、熟食皆齊，南台最著名的「菜市仔」
+- name: 屏東市北區公有零售市場（北區市場）
+  address: 屏東市公勤二街88號（中華路與公勤二街口）
+  hours: 約06:00-14:00（各攤位不同，部分熟食攤下午營業）
+  note: 傳統公開零售市場，早市賣菜為主；在地人推的菜販集中在中華路入口右手邊
+- name: 屏東市農會果菜市場（和生市場）
+  address: 屏東市和生路二段221號（管理處）
+  hours: 約03:00-07:00（凌晨批發時段）
+  note: 果菜批發市場，凌晨開市，大批量買蔬菜最便宜，適合大批發需求
+- name: 歸來社區市集（慈天宮廟前市集）
+  address: 屏東市歸來社區，慈天宮（歸來媽祖廟）廟前空地
+  hours: 約每日早晨開市，約09:30收攤（依農傳媒2025-02報導；週五另有夜市集）
+  note: 小型社區早市，規模小但品項足供當地採買；海鮮（鮭魚、鮪魚輪切）、鮮魚、蔬果、在地小吃；一帶為舊牛蒡產地，有牛蒡肉圓等在地物產。週五晚上另有「歸來慈天宮夜市集／口市集」。
+- name: 歸來慈天宮週五夜市集／口市集
+  address: 屏東市歸來社區慈天宮廟前
+  hours: 週五晚上定期舉辦（日期與時間隨活動公告）
+  note: 歸來社區農村再生計畫推動的定期市集，廟前點燈、多攤位；細節以活動公告為準。
+custom_markets: []
+sub_regions:
+- name: 屏東市
+  markets:
+  - 屏東西市場（屏東市西區公有零售市場）
+  - 屏東市北區公有零售市場（北區市場）
+  - 屏東市農會果菜市場（和生市場）
+- name: 歸來（屏東市歸來社區）
+  markets:
+  - 歸來慈天宮週五夜市集／口市集
+  - 歸來社區市集（慈天宮廟前市集）
+source_urls:
+- https://smiletaiwan.cw.com.tw/article/8213
+- https://www.pthg.gov.tw/planeab/cp.aspx?n=ACA4A517652BC732
+- http://www.ptf.org.tw/
+- https://www.ptcg.gov.tw/News_Content.aspx?n=47B5ECE0F2B83554&sms=2F1A20C11B459EA9&s=CC2508A28EA9471E
+- https://nellydyu.tw/blog/post/westmarket2024
+- https://www.agriharvest.tw/archives/123315/
+- https://akmp.cpc.org.tw/zh-tw/post/contents/5424
+- https://www.ptcg.gov.tw/News_Content.aspx?n=3DA57127AFB959E2&sms=5EA1912C5C50ADA1&s=13B4061D200ADEA3
+- https://www-ws.pthg.gov.tw/Upload/2015pthg/20/ckfile/12b415e7-5255-42b4-b0b2-3deb20a73f9c.pdf
+updated: 2026-09-17

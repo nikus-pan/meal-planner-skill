@@ -1,0 +1,36 @@
+meta:
+  name: 台式炒飯
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 33
+  strict_sensitive: [allergens:A1, allergens:A6, diabetes:T3, hypertension:H1]
+
+ingredients:
+  - { item: 隔夜白飯, qty: 2 碗（約 320 g）, substitutable: false }
+  - { item: 豬瘦肉絲, qty: 50 g, substitutable: true, alt: [雞肉絲、略],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 蝦仁, qty: 50 g, substitutable: true, alt: [略],
+      strict_sensitive: [allergens:A1] }
+  - { item: 雞蛋, qty: 1 顆, substitutable: true, alt: [略],
+      strict_sensitive: [allergens:A6] }
+  - { item: 蔥, qty: 1–2 支, substitutable: false }
+  - { item: 醬油, qty: 1 大匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 胡椒粉, qty: 少許, substitutable: false }
+  - { item: 米酒, qty: 少許, substitutable: true, alt: [略] }
+  - { item: 食用油, qty: 2 大匙, substitutable: false,
+      note: "選優質油；糖尿病 T7 飽和脂肪 advisory" }
+
+steps:
+  - { stage: 備料, text: "肉絲蝦仁各加少許鹽、胡椒粉、米酒醃 10 分", time_min: 10 }
+  - { stage: 備料, text: "蔥切蔥花分白綠、雞蛋打散加少許鹽", time_min: 3 }
+  - { stage: 烹調, text: "熱鍋下油爆香蔥白、加醬油胡椒粉拌炒 30 秒；料連飯拌鬆備用", time_min: 5 }
+  - { stage: 烹調, text: "餘油下肉絲略炒變色、加蝦仁炒 2–3 下起備", time_min: 5 }
+  - { stage: 烹調, text: "下蛋液炒碎、加飯與料大火翻炒至粒粒分明、出鍋氣", time_min: 6 }
+  - { stage: 完成, text: "試味酌量補鹽、撒蔥花起鍋", time_min: 4 }
+
+health_flags:
+  - "蝦仁 strict_sensitive：海鮮 (A1) → 海鮮過敏剔除"
+  - "雞蛋 strict_sensitive：蛋 (A6) → 蛋過敏剔除"
+  - "豬瘦肉絲 advisory：糖尿病 (T3) 最小化紅肉 → 換雞肉絲或剔除"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "用油 2 大匙：糖尿病 (T7) 飽和脂肪 advisory → 換植物油並計入全日油脂量"

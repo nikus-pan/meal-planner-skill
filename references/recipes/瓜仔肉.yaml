@@ -1,0 +1,29 @@
+meta:
+  name: 瓜仔肉
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 12
+  strict_sensitive: [hypertension:H1]
+
+ingredients:
+  - { item: 豬絞肉, qty: 200 g, substitutable: true, alt: [雞肉絲, 豆腐碎],
+      note: "絞肉選瘦者；糖尿病 T3 建議減量" }
+  - { item: 脆瓜（醬瓜）, qty: 100 g, substitutable: true, alt: [小黃瓜碎],
+      note: "脆瓜本身帶鹹；高血壓 H1 建議減量" }
+  - { item: 醬油, qty: 1 匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 蒜末, qty: 1 匙, substitutable: false }
+  - { item: 蔥末, qty: 少許, substitutable: false }
+  - { item: 白胡椒粉, qty: 少許, substitutable: false }
+  - { item: 蛋, qty: 1 顆, substitutable: true, alt: [略],
+      note: "部分做法加蛋；蛋 A6 過敏者剔除" }
+
+steps:
+  - { stage: 備料, text: "脆瓜切碎並撳鬆、蒜切末、蔥切末", time_min: 4 }
+  - { stage: 烹調, text: "大火下絞肉翻炒至變白、逼出油", time_min: 3 }
+  - { stage: 烹調, text: "下脆瓜、蒜末同炒至瓜出水", time_min: 3 }
+  - { stage: 完成, text: "醬油、胡椒粉調味、撒蔥起鍋", time_min: 2 }
+
+health_flags:
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "脆瓜（醬瓜）：本身帶鹹（含鹽醃漬），高血壓 (H1) 建議減量或先洗去表面鹽"
+  - "絞肉：糖尿病 (T3) advisory → 選瘦肉或減量"

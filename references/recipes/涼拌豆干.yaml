@@ -1,0 +1,30 @@
+meta:
+  name: 涼拌豆干
+  meal_slots: [lunch, dinner, snack]
+  cooking_time_min: 18   # = sum(steps[].time_min)
+  strict_sensitive: [allergens:A4, hypertension:H1]
+
+ingredients:
+  - { item: 豆干, qty: 3 片, substitutable: true, alt: [素肉],
+      strict_sensitive: [allergens:A4] }
+  - { item: 蒜末, qty: 2 瓣, substitutable: true, alt: [略] }
+  - { item: 香菜, qty: 少許, substitutable: false }
+  - { item: 辣椒, qty: 少許, substitutable: true, alt: [略] }
+  - { item: 醬油, qty: 1 大匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 醋, qty: 1 大匙, substitutable: false }
+  - { item: 香油, qty: 1 小匙, substitutable: true, alt: [植物油] }
+  - { item: 糖, qty: 1 小匙, substitutable: true, alt: [略],
+      note: "涼拌酸甜；糖尿病 T2 建議略" }
+
+steps:
+  - { stage: 備料, text: "豆干切細條，滾水川燙 3 分後過冷水瀝乾", time_min: 5 }
+  - { stage: 備料, text: "蒜切碎、香菜剪段、辣椒切圈", time_min: 3 }
+  - { stage: 烹調, text: "醬油＋醋＋糖＋香油調成涼拌醬汁", time_min: 2 }
+  - { stage: 完成, text: "醬汁淋上豆干、拌勻，撒蒜末香菜辣椒，冷藏 5 分入味", time_min: 5 }
+  - { stage: 完成, text: "上盤即食（涼拌開胃）", time_min: 3 }
+
+health_flags:
+  - "豆干 strict_sensitive：大豆 (A4) → 大豆過敏換素肉或全量剔除"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "糖：糖尿病 (T2) 建議略用"

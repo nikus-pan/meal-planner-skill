@@ -1,0 +1,25 @@
+meta:
+  name: 四神湯
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 52   # = sum(steps[].time_min)
+  strict_sensitive: [diabetes:T3]
+
+ingredients:
+  - { item: 四神湯燉料包（茯苓、山藥、芡實、蓮子）, qty: 1 包, substitutable: false }
+  - { item: 豬小排, qty: 200 g, substitutable: true, alt: [豬肚, 土雞腿],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 生薑, qty: 5 片, substitutable: false }
+  - { item: 米酒, qty: 1 匙, substitutable: true, alt: [水] }
+  - { item: 鹽, qty: 適量, substitutable: false,
+      note: "高血壓 H1 建議減量" }
+
+steps:
+  - { stage: 備料, text: "四神湯料包洗淨，依標示浸泡或泡水 30 分（或依店家說明免泡）", time_min: 5 }
+  - { stage: 備料, text: "豬小排汆燙去血水、薑切片備用", time_min: 5 }
+  - { stage: 烹調, text: "排骨＋薑＋米酒＋水入鍋滾轉小火燜 30 分", time_min: 30 }
+  - { stage: 烹調, text: "加四神湯料再燜 10 分", time_min: 10 }
+  - { stage: 完成, text: "少許鹽調味起鍋", time_min: 2 }
+
+health_flags:
+  - "排骨 strict_sensitive：糖尿病 (T3) 最小化紅肉 → 可換豬肚/土雞腿"
+  - "四神料包為中藥湯品，含少量澱粉類藥材；糖尿病 (T5) 建議控制份量"

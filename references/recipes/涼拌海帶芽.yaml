@@ -1,0 +1,34 @@
+meta:
+  name: 涼拌海帶芽
+  meal_slots: [lunch, dinner, snack]
+  cooking_time_min: 45
+  strict_sensitive: [allergens:A1, hypertension:H1]
+
+ingredients:
+  - { item: 乾燥海帶芽, qty: 50 g, substitutable: false,
+      note: "泡發後量多，可加小黃瓜/洋蔥充份量" }
+  - { item: 小黃瓜, qty: 1 條, substitutable: true, alt: [略] }
+  - { item: 洋蔥, qty: 1/4 顆, substitutable: true, alt: [略] }
+  - { item: 柴魚片, qty: 少許, substitutable: true, alt: [略],
+      strict_sensitive: [allergens:A1],
+      note: "海鮮過敏（A1）時剔除，純酢醬拌亦可" }
+  - { item: 醬油, qty: 1 大匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 醋, qty: 2 大匙, substitutable: false }
+  - { item: 糖, qty: 1 小匙, substitutable: true, alt: [略],
+      note: "涼拌酸甜；糖尿病 T2 建議略" }
+  - { item: 香油（或芝麻油）, qty: 1 小匙, substitutable: true, alt: [植物油] }
+  - { item: 芝麻, qty: 少許, substitutable: true, alt: [略] }
+
+steps:
+  - { stage: 備料, text: "海帶芽泡水 10 分泡發、剪成入口長", time_min: 10 }
+  - { stage: 備料, text: "洋蔥切絲冰水泡 10 分去嗆；小黃瓜切片鹽醃 5 分後沖洗", time_min: 10 }
+  - { stage: 烹調, text: "滾水川燙海帶芽 4 分、過冷水瀝乾", time_min: 6 }
+  - { stage: 完成, text: "醬汁（醬油＋醋＋糖＋香油）淋上拌勻，撒芝麻柴魚", time_min: 4 }
+  - { stage: 完成, text: "冷藏 15 分入味後食用", time_min: 15 }
+
+health_flags:
+  - "柴魚 strict_sensitive：海鮮 (A1) → 海鮮過敏剔除"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "糖：糖尿病 (T2) 建議略用"
+  - "海帶芽高纖、無糖無油主食配菜（低卡常備菜）"

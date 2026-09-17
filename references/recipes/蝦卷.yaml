@@ -1,0 +1,31 @@
+meta:
+  name: 蝦卷
+  meal_slots: [lunch, dinner, snack]
+  cooking_time_min: 34
+  strict_sensitive: [allergens:A1, diabetes:T7]
+
+ingredients:
+  - { item: 蝦仁, qty: 150 g, substitutable: false,
+      strict_sensitive: [allergens:A1] }
+  - { item: 豬絞肉, qty: 50 g, substitutable: true, alt: [略],
+      strict_sensitive: [diabetes:T7], note: "增加黏性口感" }
+  - { item: 紅蘿蔔, qty: 30 g, substitutable: false }
+  - { item: 蔥末, qty: 1 匙, substitutable: false }
+  - { item: 太白粉, qty: 1 大匙, substitutable: false }
+  - { item: 米酒, qty: 1 匙, substitutable: true, alt: [水] }
+  - { item: 香油, qty: 1 小匙, substitutable: false }
+  - { item: 麵糊（麵粉＋水）, qty: 適量, substitutable: false,
+      note: "炸用裹粉；麩質 A5 過敏者剔除" }
+
+steps:
+  - { stage: 備料, text: "蝦仁去腸泥剁成泥、紅蘿蔔切丁、蔥切末", time_min: 5 }
+  - { stage: 備料, text: "蝦泥＋絞肉＋調味料（米酒、香油、鹽、白胡椒、太白粉）拌黏 10 分", time_min: 10 }
+  - { stage: 備料, text: "蝦肉分粒排成捲、捲緊成棒，灑太白粉防粘", time_min: 5 }
+  - { stage: 烹調, text: "麵糊調勻（麵粉＋水＋少許蛋液）", time_min: 3 }
+  - { stage: 烹調, text: "蝦捲裹麵糊、170℃ 油炸 8 分至金黃", time_min: 8 }
+  - { stage: 完成, text: "瀝油、切斜段，配番茄醬或胡椒鹽", time_min: 3 }
+
+health_flags:
+  - "蝦仁 strict_sensitive：海鮮 (A1) → 海鮮過敏剔除"
+  - "麵糊 strict_sensitive：麩質 (A5) → 小麥過敏者剔除（改用其他裹粉）"
+  - "油炸：飽和/總脂肪偏高，糖尿病 (T7) advisory 建議減量或改煎"

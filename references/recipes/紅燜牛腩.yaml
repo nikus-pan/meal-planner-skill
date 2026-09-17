@@ -1,0 +1,34 @@
+meta:
+  name: 紅燜牛腩
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 85
+  strict_sensitive: [diabetes:T3, diabetes:T7, hypertension:H1]
+
+ingredients:
+  - { item: 牛腩, qty: 400 g, substitutable: true, alt: [牛肋條],
+      strict_sensitive: [diabetes:T3, diabetes:T7] }
+  - { item: 洋蔥, qty: 1/2 顆, substitutable: true, alt: [略] }
+  - { item: 紅蘿蔔, qty: 1/2 根, substitutable: true, alt: [略] }
+  - { item: 薑片, qty: 4 片, substitutable: false }
+  - { item: 蔥段, qty: 2 支, substitutable: false }
+  - { item: 蒜末, qty: 少許, substitutable: true, alt: [略] }
+  - { item: 辣豆瓣醬, qty: 1 大匙, substitutable: true, alt: [略、改純醬油版],
+      note: "紅燜醬香關鍵調味" }
+  - { item: 醬油, qty: 2 大匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 米酒, qty: 2 大匙, substitutable: true, alt: [水] }
+  - { item: 冰糖, qty: 1 大匙, substitutable: true, alt: [略],
+      note: "紅燜甜鹹；糖尿病 T2 建議略" }
+  - { item: 水, qty: 適量（蓋過牛腩）, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "牛腩切塊汆燙去血水、撈起備用；洋蔥切絲、紅蘿蔔切塊、蔥切段", time_min: 10 }
+  - { stage: 烹調, text: "油爆香薑蒜蔥、下洋蔥炒軟", time_min: 5 }
+  - { stage: 烹調, text: "下牛腩＋辣豆瓣醬＋醬油＋米酒＋冰糖拌炒出香氣", time_min: 5 }
+  - { stage: 烹調, text: "加紅蘿蔔與水滾轉小火蓋蓋燜 55 分至軟", time_min: 55 }
+  - { stage: 完成, text: "大火收汁、撒蔥花起鍋", time_min: 10 }
+
+health_flags:
+  - "牛腩 strict_sensitive：糖尿病 (T3) 最小化紅肉、(T7) 飽和脂肪 advisory → 可減量或換牛蒡等蔬菜版"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "冰糖：糖尿病 (T2) 建議略用"

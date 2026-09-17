@@ -1,0 +1,25 @@
+region: 南投
+markets:
+- name: 南投市公有零售市場（南投百年市場）
+  address: 南投市大同街36號（民權街、中山街、彰南路二段與民族路間）
+  hours: 早市採買，營業時間約06:00-15:00（各攤商時段略有出入，以市場公告為準）
+  note: 市集形成於1920年、1938年日治建築（921地震後重建，保存巴洛克外觀），約183攤鋪位、8處出入口；友德南投意麵（中山街179號）、源振發製麵（傳承五代）、自在製麵（1926年創）、丸雨食品、麥吉水餃、碗粿霞等老字號集中；連續獲雙星樂活市集認證，2026年舉辦百年傳統市場藝術節。
+- name: 草屯公有零售市場
+  address: 南投縣草屯鎮和興街55號
+  hours: 早市約07:00-13:00（上、下午皆有攤商營業；週一多休市，以市場自治會公告為準）
+  note: 草屯鎮第一大傳統市場，1994年改建為室內市場（民國92年），草屯鎮公所協助活化；丸林號蔬菜部、茂川肉鬆、草屯劉古早味花生糖、鴻興鵝肉等在地名攤，周邊廟口小吃（廟口意麵、方愫馨麻糬）形成傳統市集範圍。
+- name: 中興新村第一市場
+  address: 南投市光華二路1號之2（中興新村一帶）
+  hours: 早市採買，營業時間約06:00-14:00（各攤商時段略有出入，以市場公告為準）
+  note: 中興新村歷史最久的市場，鄰近椰林大道、荷花池，生鮮、雜貨、服飾、美食齊全並附免費停車場；新祝福肉包（光華二路1號之2，每日06:00-14:00）、老山羊素食、LEO咖啡、阿西匹薩等，112年獲經濟部輔導計畫輔導轉型。
+custom_markets: []
+source_urls:
+- https://news.ltn.com.tw/news/life/breakingnews/4406440
+- https://city.gvm.com.tw/article/94574
+- https://smiletaiwan.cw.com.tw/article/9213
+- https://www.cto.moea.gov.tw/web/news/detail.php?id=46
+- https://www.tsaotun.gov.tw/list/Activity?model=view&view=12309
+- https://glrs.nantou.gov.tw/LawContent.aspx?id=GL000626
+- https://tlife.thsrc.com.tw/tw/article/4916
+- https://pbear.tw/%E6%96%B0%E7%A5%9D%E7%A6%8F%E9%A3%B2%E9%A3%9F%E5%BA%97/
+updated: 2026-09-17

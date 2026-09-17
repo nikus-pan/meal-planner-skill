@@ -1,0 +1,26 @@
+region: 高雄
+markets:
+- name: 鹽埕第一公有零售市場
+  address: 高雄市鹽埕區瀨南街141之7號
+  hours: 早市約07:00-12:00；週三至週日16:00-21:30（週一、週二休市；各來源時段略有出入，以市場管理處公告為準）
+  note: 70多年歷史老市場，鹽埕在地菜市仔；捷運鹽埕埔站旁；2022年起優化改造，保留舊樣貌並加入質感設計，早市蔬菜、漁鮮與熟食，另有夜間市集。
+- name: 三民第一公有零售市場（三民第一市場）
+  address: 高雄市三民區中華三路285-39號
+  hours: 約07:30-13:00（攤商各異；週一休市）
+  note: 三民區傳統菜市仔，中華路一帶；蔬果蔬菜、豬肉、雞鴨與熟食攤齊全，業種區域明確、地板乾淨；假日有表演節目。
+- name: 果貿公有市場（左營區果貿市場）
+  address: 高雄市左營區中華一路9號
+  hours: 約07:00-12:00（週一公休）
+  note: 左營區果貿眷村一帶社區傳統市場；早市買菜為主，在地居民日常採買處；市場管理處列管公有零售市場。
+custom_markets: []
+source_urls:
+- https://edbkcg.kcg.gov.tw/cp.aspx?n=58B03765A9BD67E6
+- https://edbkcg.kcg.gov.tw/cp.aspx?n=EE6BD3F52E62D668
+- https://ksdelicacy.pixnet.net/blog/posts/5064270087
+- https://smiletaiwan.cw.com.tw/article/1730
+- https://vocus.cc/article/65c7bc59fd897800012cb129
+- https://springhappylife.tw/20221002-01/
+- https://www.khafterparty.tw/Nightmarket/Detail/XlR27Yp3ZV8v?cateId=39
+- https://github.com/g0v/twbot-data/blob/master/NoUseArchitecture_txt/%E9%AB%98%E9%9B%84%E5%B8%82%E6%9E%9C%E8%B2%BF%E5%85%AC%E6%9C%89%E5%B8%82%E5%A0%B4.txt
+- https://www.cto.moea.gov.tw/web/news/detail.php?id=128
+updated: 2026-09-17

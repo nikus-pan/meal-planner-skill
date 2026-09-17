@@ -1,0 +1,29 @@
+meta:
+  name: 昆布柴魚高湯
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 30
+  strict_sensitive: [hypertension:H1]
+
+ingredients:
+  - { item: 昆布（乾）, qty: 1 小片, substitutable: true, alt: [略] }
+  - { item: 柴魚（鰹魚薄片）, qty: 1 小片, substitutable: true,
+      alt: [略], strict_sensitive: [allergens:A1],
+      note: "海鮮過敏（A1）時略柴魚，純昆布高湯亦可" }
+  - { item: 水, qty: 4 杯, substitutable: false }
+  - { item: 小黃瓜/當季蔬菜, qty: 1 人份, substitutable: true, alt: [蕪筍] }
+  - { item: 鹽, qty: 少許, substitutable: true, alt: [略],
+      strict_sensitive: [hypertension:H1],
+      note: "H1 理想 1500 mg/日 → 本湯「少許」（約 1/4 小匙以下）或略" }
+
+steps:
+  - { stage: 備料, text: "昆布浸泡 20 分（軟後再泡易濁）", time_min: 5 }
+  - { stage: 備料, text: "小黃瓜切片、備薑片", time_min: 3 }
+  - { stage: 烹調, text: "水滾轉小火下昆布，快滾時撈起昆布", time_min: 10 }
+  - { stage: 烹調, text: "下柴魚小火煮至表面變白即關火", time_min: 5 }
+  - { stage: 烹調, text: "下蔬菜、少許鹽（H1 可略）同煮至熟", time_min: 5 }
+  - { stage: 完成, text: "撈起柴魚，濾湯起鍋", time_min: 2 }
+
+health_flags:
+  - "本湯無糖、無醬油調味；H1 嚴控時「少許鹽」= 約 1/4 小匙（≈150 mg 鈉）或完全略"
+  - "柴魚 strict_sensitive：海鮮 (A1) → 過敏剔除改純昆布高湯"
+  - "無糖 → 糖尿病 T2/T5 友好；蔬菜 = H3 高鉀來源（advisory）"

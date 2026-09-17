@@ -1,0 +1,28 @@
+meta:
+  name: 紅燒肉
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 55
+  strict_sensitive: [diabetes:T3, diabetes:T7, hypertension:H1]
+
+ingredients:
+  - { item: 五花肉, qty: 200 g, substitutable: true, alt: [雞腿肉],
+      strict_sensitive: [diabetes:T3, diabetes:T7] }
+  - { item: 醬油, qty: 2 匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 冰糖, qty: 少許, substitutable: true, alt: [無],
+      strict_sensitive: [diabetes:T2, diabetes:T5] }
+  - { item: 薑片, qty: 3 片, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "五花肉切3cm方塊、冷水下鍋汆燙去血沫洗淨", time_min: 5 }
+  - { stage: 烹調, text: "少許油＋冰糖小火炒糖色至焦糖", time_min: 2 }
+  - { stage: 烹調, text: "下肉塊翻滾上色", time_min: 2 }
+  - { stage: 烹調, text: "加薑片、醬油、少許米酒", time_min: 2 }
+  - { stage: 烹調, text: "加水蓋過肉、轉小火燜40分", time_min: 40 }
+  - { stage: 完成, text: "大火收汁至濃稠", time_min: 2 }
+  - { stage: 完成, text: "可撒蔥花", time_min: 2 }
+
+health_flags:
+  - "五花肉 strict_sensitive：紅肉 + 飽和脂肪 (T3/T7) → 糖尿病/高血壓建議剔除或換雞腿"
+  - "冰糖 strict_sensitive：糖尿病 (T2/T5) → 不建議糖尿病患者使用"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"

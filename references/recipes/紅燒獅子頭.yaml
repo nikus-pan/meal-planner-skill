@@ -1,0 +1,32 @@
+meta:
+  name: 紅燒獅子頭
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 45   # = sum(steps[].time_min)
+  strict_sensitive: [diabetes:T3, diabetes:T7, hypertension:H1]
+
+ingredients:
+  - { item: 豬絞肉（半肥半瘦）, qty: 500 g, substitutable: true, alt: [絞雞肉],
+      strict_sensitive: [diabetes:T3, diabetes:T7] }
+  - { item: 雞蛋, qty: 1 顆, substitutable: true, alt: [水],
+      strict_sensitive: [allergens:A6] }
+  - { item: 太極粉, qty: 1 大匙, substitutable: false }
+  - { item: 蔥段、薑末、蒜末, qty: 適量, substitutable: false }
+  - { item: 醬油, qty: 2 大匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 米酒, qty: 1 大匙, substitutable: true, alt: [水] }
+  - { item: 冰糖, qty: 1 大匙, substitutable: true, alt: [略],
+      note: "紅燒甜鹹；糖尿病 T2 建議略" }
+  - { item: 清江菜（或高麗菜）, qty: 200 g, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "絞肉加雞蛋、太白粉、蔥薑蒜末、少許醬油米酒順向攪打至黏", time_min: 10 }
+  - { stage: 備料, text: "捏成 6–8 個大肉丸子，清江菜燙熟備用", time_min: 10 }
+  - { stage: 烹調, text: "獅子頭以溫油慢煎定型至表面微焦", time_min: 10 }
+  - { stage: 烹調, text: "加醬油、米酒、冰糖、水滾轉小火燜 12 分收汁", time_min: 12 }
+  - { stage: 完成, text: "清江菜圍盤、獅子頭置中，淋醬汁", time_min: 3 }
+
+health_flags:
+  - "絞肉 strict_sensitive：糖尿病 (T3) 最小化紅肉、(T7) 飽和脂肪 advisory → 可換絞雞肉或減量"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "雞蛋 strict_sensitive：蛋 (A6) → 蛋過敏以水代"
+  - "冰糖：糖尿病 (T2) 建議略用"

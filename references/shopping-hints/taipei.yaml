@@ -1,0 +1,25 @@
+region: 台北
+markets:
+- name: 雙連市場（臺北市公有雙連市場）
+  address: 臺北市大同區民生西路198號
+  hours: 約07:00-24:00（24小時空間，攤位各異；週一休市）
+  note: 大同區老牌公有零售市場，雙連捷運站旁；早市蔬菜、魚肉與麵食、魷魚羹、豆花等小吃聞名；週一休市（市場處公告）。
+- name: 士林市場（臺北市公有士林市場）
+  address: 臺北市士林區基河路101號
+  hours: 1F早市：週二至週日06:00-12:00，週一休市；夜市17:00-24:00；B1地下美食街（各來源時間略有出入，以市場處公告為準）
+  note: 白天主打在地直送生鮮蔬果、乾貨，是士林在地人日常採買處；傍晚化身士林夜市，蚵仔煎、士林大香腸、大排檔知名。
+- name: 濱江市場（臺北市公有濱江市場／濱江果菜市場）
+  address: 臺北市中山區民族東路336號（濱江果菜市場／第二果菜批發市場）；濱江零售市場（民族東路410巷一帶）
+  hours: 濱江果菜批發：約06:00-11:00，週一休市（市場處：蔬菜零批場上午3時起開市）；濱江零售市場約06:00-14:00，週一休市
+  note: 行天宮捷運站旁，「近郊菜」知名，旁有全市第二大果菜批發市場（濱江果菜市場），蔬菜品項多；早市最熱鬧，平日上午採買最划算。
+custom_markets: []
+source_urls:
+- https://www.tcma.gov.taipei/News_Content.aspx?n=1A4C7120ABFD0F9F&sms=26C5BF03E7963F4E&s=45113F039B001621
+- https://www.tcma.gov.taipei/News_Content.aspx?n=1A4C7120ABFD0F9F&sms=26C5BF03E7963F4E&s=80903C918A9F93E3
+- https://www.tcma.gov.taipei/News_Content.aspx?n=4E8C00BFE8664B5D&sms=69283D704CC8F75A&s=A246936A09B1FC39
+- https://www.travel.taipei/zh-tw/attraction/details/1593
+- https://www.housefeel.com.tw/article/%E5%82%B3%E7%B5%B1%E5%B8%82%E5%A0%B4-%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A0%B4-%E8%8F%9C%E5%B8%82%E5%A0%B4-%E4%B8%AD%E7%B9%BC%E5%B8%82%E5%A0%B4/
+- https://yimedia.com.tw/lifestyle/65066/
+- https://www.wealth.com.tw/articles/f34a6401-1216-4993-9b4a-406bb1bec62d
+- https://www.tcma.gov.taipei/News.aspx?n=242EBE09AC562BE0&sms=24F2F8C900F7E071
+updated: 2026-09-17

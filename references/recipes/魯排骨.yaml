@@ -1,0 +1,30 @@
+meta:
+  name: 魯排骨
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 60   # = sum(steps[].time_min)
+  strict_sensitive: [diabetes:T3, hypertension:H1]
+
+ingredients:
+  - { item: 小排（豬肋排）, qty: 400 g, substitutable: true, alt: [絞肉],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 醬油, qty: 2 大匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 米酒, qty: 2 大匙, substitutable: true, alt: [水] }
+  - { item: 八角, qty: 2 顆, substitutable: false }
+  - { item: 老薑, qty: 4 片, substitutable: false }
+  - { item: 蒜末, qty: 少許, substitutable: true, alt: [略] }
+  - { item: 糖, qty: 1 大匙, substitutable: true, alt: [略],
+      note: "滷汁甜鹹；糖尿病 T2 建議略" }
+  - { item: 胡椒粉, qty: 少許, substitutable: false }
+  - { item: 水, qty: 適量（蓋過排骨 2/3）, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "小排洗淨冷水汆燙去血水、薑切片", time_min: 5 }
+  - { stage: 烹調, text: "醬油＋米酒＋八角＋薑＋糖＋胡椒粉＋水煮滾", time_min: 5 }
+  - { stage: 烹調, text: "排骨入滷湯滾轉小火蓋蓋滷 40 分至軟", time_min: 40 }
+  - { stage: 完成, text: "大火收汁、撒蒜末翻勻起鍋（可另配飯）", time_min: 10 }
+
+health_flags:
+  - "小排 strict_sensitive：糖尿病 (T3) 最小化紅肉 → 可換絞雞肉或全量剔除"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "糖：糖尿病 (T2) 建議略用"

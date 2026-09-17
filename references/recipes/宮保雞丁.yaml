@@ -1,0 +1,31 @@
+meta:
+  name: 宮保雞丁
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 23   # = sum(steps[].time_min)
+  strict_sensitive: [allergens:A3, allergens:A7, hypertension:H1]
+
+ingredients:
+  - { item: 雞胸肉, qty: 200 g, substitutable: true, alt: [雞腿肉, 瘦肉] }
+  - { item: 辣椒, qty: 3 根, substitutable: true, alt: [甜椒] }
+  - { item: 花生, qty: 30 g, substitutable: true,
+      alt: [腰果, 杏仁], strict_sensitive: [allergens:A3, allergens:A7] }
+  - { item: 醬油, qty: 2 匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 米酒, qty: 1 匙, substitutable: true, alt: [水] }
+  - { item: 蔥花, qty: 適量, substitutable: false }
+  - { item: 冰糖, qty: 1 匙, substitutable: true, alt: [略],
+      note: "宮保甜酸鹹；糖尿病 T2 建議略" }
+  - { item: 醋, qty: 1 匙, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "雞胸切丁，加少許醬油、米酒、生粉醃 10 分", time_min: 10 }
+  - { stage: 備料, text: "醬汁：醬油 2 匙＋冰糖 1 匙＋醋 1 匙＋生粉水 1 匙調勻備用", time_min: 2 }
+  - { stage: 備料, text: "辣椒切段、蔥切花；花生小火焙香撈起備用", time_min: 5 }
+  - { stage: 烹調, text: "大火快炒雞丁至變色（約 3 分），撈起備用", time_min: 3 }
+  - { stage: 烹調, text: "鍋留少許油，下辣椒爆香，倒入醬汁煮滾", time_min: 2 }
+  - { stage: 完成, text: "雞丁回鍋翻勻，下花生立即起鍋（避免花生變軟）", time_min: 1 }
+
+health_flags:
+  - "花生 strict_sensitive：過敏原 (A3/A7) → 替換為腰果/杏仁，或全量剔除（若落花生過敏）"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉醬油或減量"
+  - "冰糖：糖尿病 (T2) 建議略用，改以醋提味"

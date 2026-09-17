@@ -1,0 +1,31 @@
+meta:
+  name: 三杯雞
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 35
+  strict_sensitive: [diabetes:T3, diabetes:T7, hypertension:H1]
+
+ingredients:
+  - { item: 去骨雞腿肉, qty: 200 g, substitutable: true, alt: [雞胸肉],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 老薑, qty: 5 片, substitutable: false }
+  - { item: 蒜仁, qty: 5 顆, substitutable: false }
+  - { item: 醬油, qty: 1 大匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+  - { item: 麻油, qty: 1 大匙, substitutable: false }
+  - { item: 米酒, qty: 1 大匙, substitutable: true, alt: [水] }
+  - { item: 冰糖, qty: 少許, substitutable: true, alt: [略],
+      note: "三杯甜鹹；糖尿病 T2 建議略" }
+  - { item: 九層塔, qty: 1 小把, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "雞腿切小塊、薑切片、蒜切碎", time_min: 5 }
+  - { stage: 烹調, text: "雞塊冷油下鍋煎至表面金黃", time_min: 8 }
+  - { stage: 烹調, text: "留雞油爆香薑、蒜至微焦", time_min: 3 }
+  - { stage: 烹調, text: "加醬油、麻油、米酒、冰糖，加水蓋過雞塊", time_min: 2 }
+  - { stage: 烹調, text: "蓋蓋小火燜 15 分至湯汁收半", time_min: 15 }
+  - { stage: 完成, text: "下九層塔翻勻收汁起鍋", time_min: 2 }
+
+health_flags:
+  - "雞腿 strict_sensitive：皮與油 → 糖尿病/高血壓 (T3/T7) 建議去翅去皮"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"
+  - "冰糖：糖尿病 (T2) 建議略用"

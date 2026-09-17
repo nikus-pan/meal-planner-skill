@@ -1,0 +1,25 @@
+meta:
+  name: 高麗菜炒蛋
+  meal_slots: [lunch, dinner]
+  cooking_time_min: 15
+  strict_sensitive: [allergens:A6]
+
+ingredients:
+  - { item: 高麗菜, qty: 1/4 顆, substitutable: false }
+  - { item: 雞蛋, qty: 3 顆, substitutable: true, alt: [豆腐碎],
+      strict_sensitive: [allergens:A6] }
+  - { item: 蔥花, qty: 適量, substitutable: false }
+  - { item: 醬油, qty: 1 匙, substitutable: true, alt: [低鈉醬油],
+      strict_sensitive: [hypertension:H1] }
+
+steps:
+  - { stage: 備料, text: "高麗菜切絲", time_min: 3 }
+  - { stage: 備料, text: "蛋加少許鹽打散", time_min: 3 }
+  - { stage: 烹調, text: "蛋液下鍋炒至半凝固先起鍋", time_min: 2 }
+  - { stage: 烹調, text: "大火快炒高麗菜至稍軟", time_min: 2 }
+  - { stage: 烹調, text: "蛋回鍋合炒", time_min: 2 }
+  - { stage: 完成, text: "醬油調味、撒蔥花", time_min: 3 }
+
+health_flags:
+  - "雞蛋 strict_sensitive：蛋 (A6) → 蛋過敏換豆腐碎"
+  - "醬油 strict_sensitive：高血壓 (H1) → 低鈉版或減量"

@@ -1,0 +1,29 @@
+meta:
+  name: 皮蛋瘦肉粥
+  meal_slots: [breakfast, dinner]
+  cooking_time_min: 49
+  strict_sensitive: [allergens:A6, diabetes:T3, hypertension:H1]
+
+ingredients:
+  - { item: 皮蛋, qty: 2 顆, substitutable: true, alt: [鹹蛋],
+      strict_sensitive: [allergens:A6, hypertension:H1] }
+  - { item: 瘦肉（豬里肌）, qty: 100 g, substitutable: true, alt: [雞肉],
+      strict_sensitive: [diabetes:T3] }
+  - { item: 白米, qty: 1 杯, substitutable: true, alt: [糙米],
+      strict_sensitive: [diabetes:T5] }
+  - { item: 水, qty: 8 杯, substitutable: false }
+  - { item: 香菜, qty: 適量, substitutable: false }
+
+steps:
+  - { stage: 備料, text: "瘦肉切薄片，用料酒/少許鹽醃 10 分（可與煮粥同步）", time_min: 10 }
+  - { stage: 備料, text: "皮蛋切小塊；備薑絲、香菜", time_min: 3 }
+  - { stage: 烹調, text: "米洗淨加水 8 杯大火煮開轉小火燜 25 分", time_min: 25 }
+  - { stage: 烹調, text: "粥稠時下瘦肉片划散、下皮蛋塊", time_min: 2 }
+  - { stage: 烹調, text: "再煮 3–5 分", time_min: 5 }
+  - { stage: 完成, text: "撒香菜、胡椒粉、少許鹽", time_min: 2 }
+  - { stage: 完成, text: "可加少許薑絲去腥（選用）", time_min: 2 }
+
+health_flags:
+  - "皮蛋 strict_sensitive：蛋 (A6) + 高鈉 (H1) → 蛋過敏剔除、高血壓減量或換鹹蛋"
+  - "瘦肉 strict_sensitive：紅肉 (T3) → 糖尿病患者可換雞肉"
+  - "白米 advisory：糖尿病 (T5) → 可換糙米"

@@ -1,0 +1,32 @@
+meta:
+  name: 蒜頭綠豆湯
+  meal_slots: [lunch, dinner, snack]
+  cooking_time_min: 55   # = sum(steps[].time_min)
+  strict_sensitive: [diabetes:T2, hypertension:H1]
+
+ingredients:
+  - { item: 去皮綠豆仁, qty: 150 g, substitutable: false }
+  - { item: 蒜仁, qty: 10 瓣, substitutable: false }
+  - { item: 紅糖, qty: 60 g, substitutable: true, alt: [略],
+      strict_sensitive: [diabetes:T2, diabetes:T5],
+      note: "糖尿病 T2/T5 建議全量略用" }
+  - { item: 冰糖, qty: 20 g, substitutable: true, alt: [略],
+      strict_sensitive: [diabetes:T2, diabetes:T5],
+      note: "糖尿病 T2/T5 建議全量略用" }
+  - { item: 桂圓乾, qty: 30 g, substitutable: true, alt: [略] }
+  - { item: 鹽, qty: 少許, substitutable: true, alt: [略],
+      strict_sensitive: [hypertension:H1],
+      note: "高血壓 H1 可免鹽" }
+  - { item: 水, qty: 1500 c.c., substitutable: false }
+
+steps:
+  - { stage: 備料, text: "綠豆仁洗淨、泡水 30 分（或冷藏泡一夜）", time_min: 10 }
+  - { stage: 備料, text: "蒜仁拍裂備用", time_min: 3 }
+  - { stage: 烹調, text: "大火滾水、下綠豆轉小火燜煮 30 分至綠豆軟爛", time_min: 30 }
+  - { stage: 烹調, text: "加蒜仁、桂圓、紅糖冰糖再煮 10 分", time_min: 10 }
+  - { stage: 完成, text: "可加少許鹽提味、起鍋（熱食或冰鎮皆宜）", time_min: 2 }
+
+health_flags:
+  - "紅糖/冰糖 strict_sensitive：糖尿病 (T2) 含糖 → 建議全量剔除（改無糖版）"
+  - "鹽：高血壓 (H1) 建議減量或免用"
+  - "桂圓乾：熱量偏高，糖尿病 (T5) 建議控制份量"

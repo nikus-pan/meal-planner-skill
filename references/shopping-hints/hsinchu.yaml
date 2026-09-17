@@ -1,0 +1,25 @@
+region: 新竹
+markets:
+- name: 竹蓮市場（新竹市公有竹蓮零售市場）
+  address: 新竹市東區竹蓮街15號
+  hours: 06:00-14:00（週一正常營業；以市場公告為準）
+  note: 新竹市區最大室內傳統市場，有冷氣、電梯、手扶梯與無障礙設施，一樓生鮮蔬果、水產海鮮，二樓熟食小吃與產地直送蔬菜；鄰近新竹火車站與竹蓮寺，早市約06:00開始、接近中午人潮最旺；市場委外經營並附官方網站與攤商目錄。
+- name: 中央市場（新竹市公有中央零售市場）
+  address: 新竹市北區西門街2巷1號
+  hours: 06:00-15:00（各攤商時段略有出入，攤位多於週一休市；以市場公告為準）
+  note: 1952年設市，老字號「老陳家」糯米水餃（92攤）經營逾70年，市場內麵食、米糕等小吃集中；位於新竹火車站前老市區，早市晨間採買方便，鄰近城隍廟。
+- name: 竹北公有零售市場
+  address: 新竹縣竹北市仁愛街51號旁（鄰近竹北火車站、竹北天后宮）
+  hours: 06:00-13:00（每週一休市；攤商時段略有出入，以市場所公告為準）
+  note: 1970年設市，竹北市公所轄內三大公有零售市場之一，約86鋪位、58攤位；同所另有仁義、新社兩處，竹北老城早市與在地小吃集中，周邊仁和、仁愛街臨時攤販形成市集範圍。
+custom_markets: []
+source_urls:
+- https://www.chulien.com.tw/
+- https://www.chulien.com.tw/couponC
+- https://www.facebook.com/chulienmarket/
+- https://dep-construction.hccg.gov.tw/ch/home.jsp?id=35&parentpath=0,4,17
+- https://www.zhubei.gov.tw/iframsoe_contain.php?menu=&typeid=1123&typeid2=&news_id=228
+- https://law.hccg.gov.tw/LawContent.aspx?id=GL000052
+- https://haohui2017.com/lifestyle/hsinchu-chulienmarket/
+- https://yuanchutogether.ito.tw/news-detail/centralmarket-food/
+updated: 2026-09-17

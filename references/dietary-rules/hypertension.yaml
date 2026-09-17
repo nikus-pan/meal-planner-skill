@@ -1,0 +1,42 @@
+# 高血壓規則包（第一批）
+# 來源：研究 02（NIH NHLBI DASH、AHA 鈉限制、台灣 DRIs 第八版 CDRR）
+# 鈉硬上限 2300 mg/日 三來源一致；1500 mg 為理想目標（最嚴取交集時用 1500）
+meta:
+  condition: 高血壓
+  version: 1
+  sources:
+    - https://www.nhlbi.nih.gov/health/dash-eating-plan
+    - https://www.nhlbi.nih.gov/health/dash/following-dash
+    - https://newsroom.heart.org/news/reducing-sodium-intake-significantly-lowered-blood-pressure-in-as-little-as-one-week
+
+rules:
+  - id: H1
+    cond: 鈉攝取
+    level: strict
+    action: limit
+    limit: "<= 2300 mg/日（硬上限）；理想目標 1500 mg/日"
+    source: AHA / NIH NHLBI / 台灣 DRIs 第八版 CDRR
+  - id: H2
+    cond: 飲食模式
+    level: strict
+    action: prefer
+    limit: "DASH：蔬果、全穀、低脂乳品、瘦肉、堅果；減少紅肉、含糖飲料、精緻食品"
+    source: NIH NHLBI DASH Eating Plan
+  - id: H3
+    cond: 鉀攝取
+    level: advisory
+    action: prefer
+    limit: "增加蔬果、豆類、低脂乳品（高鉀有助降壓；腎病變者除外）"
+    source: NIH NHLBI Following DASH
+  - id: H4
+    cond: 酒精
+    level: advisory
+    action: limit
+    limit: "男 <=2 份/日、女 <=1 份/日（1 份 = 葡萄酒 150 ml 或啤酒 355 ml）"
+    source: NIH NHLBI / AHA
+  - id: H5
+    cond: 飽和脂肪
+    level: advisory
+    action: limit
+    limit: null
+    source: NIH NHLBI DASH

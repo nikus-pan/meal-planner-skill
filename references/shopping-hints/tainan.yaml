@@ -1,0 +1,23 @@
+region: 台南
+markets:
+- name: 東菜市（臺南市東菜市公有零售市場）
+  address: 臺南市中西區青年路164巷26號
+  hours: 07:00-12:00（週一及農曆十七休市；以市場處公告為準）
+  note: 府城百年市場、全市首屈一指規模最大的傳統市場，約289攤；水果蔬菜、畜肉、禽肉、漁產與雜貨業種齊全，晨間早市最熱鬧；全台首座無菸市場，101年獲3星優良市集，鄰近台南火車站與城隍廟。
+- name: 水仙宮市場（水仙宮公有零售市場）
+  address: 臺南市中西區海安路二段230號
+  hours: 早市（約05:30-12:00；每月第四個禮拜一公休；各攤商時段略有出入，以市場處公告為準）
+  note: 台南市區現存最古老的菜市，約125攤；水仙宮廟埕一帶，蔬菜、漁鮮與熟食為主（阿惠蔬菜、蘇進藤魚鮮、阿成切仔擔為樂活名攤）；與永樂市場相鄰共成一大範圍市集，112年獲3星樂活市集認證。
+- name: 永樂市場（永樂公有零售市場）
+  address: 臺南市中西區國華街三段123-234號
+  hours: 早市、無固定休息日（各攤商時段略有出入，以市場處公告為準）
+  note: 1963年建成，約227攤；古稱「賊仔市」，國華街美食一級戰區，水仙宮青草茶、修安扁擔豆花、永樂米糕為知名攤位；飲食、雜貨與生鮮並重，與水仙宮市場共成中西區最大市集範圍。
+custom_markets: []
+source_urls:
+- https://marketoffice.tainan.gov.tw/News_Content.aspx?n=44648&s=8749275
+- https://marketoffice.tainan.gov.tw/News_Content.aspx?n=44648&s=8749304
+- https://marketoffice.tainan.gov.tw/News_Content.aspx?n=44648&s=8749104
+- https://www.funliday.com/posts/tainan-oldmarket-best5/
+- https://weblog.tainanoutlook.com/posts/tainan-dongcai-market-century-breakfast-walk
+- https://zh.wikipedia.org/zh-hant/水仙宮市場
+updated: 2026-09-17
