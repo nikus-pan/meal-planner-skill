@@ -22,7 +22,7 @@
 放進 agent runtime 的 skill 目錄（需目錄名 `meal-planner`）：
 
 ```bash
-git clone https://github.com/<your-username>/meal-planner-skill
+git clone https://github.com/nikus-pan/meal-planner-skill
 cp -r meal-planner-skill <runtime>/skills/meal-planner
 ```
 
